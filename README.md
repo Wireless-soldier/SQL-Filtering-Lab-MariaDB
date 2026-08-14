@@ -61,6 +61,20 @@ SQL Query
 SELECT device_id, operating_system
 FROM machines;
 Result
++--------------+------------------+
+| device_id    | operating_system |
++--------------+------------------+
+| a184b775c707 | OS 1             |
+| a192b174c940 | OS 2             |
+| a305b818c708 | OS 3             |
+| a317b635c465 | OS 1             |
+| a320b137c219 | OS 2             |
+| a398b471c573 | OS 3             |
+|...                              |
++--------------+------------------+
+200 rows in set (0.028 sec)
+
+How many rows were returned from the machines table? (You can view the number of
 
 The query returned:
 
@@ -83,6 +97,17 @@ WHERE operating_system = 'OS 2';
 The WHERE clause filters the results so that only records matching the specified condition are returned.
 
 Result
++--------------+------------------+
+| device_id    | operating_system |
++--------------+------------------+
+| a192b174c940 | OS 2             |
+| a320b137c219 | OS 2             |
+| a821b452c176 | OS 2             |
+| b157c491d493 | OS 2             |
+| b264c773d977 | OS 2             |
+|...                              |
++--------------+------------------+
+80 rows in set (0.264 sec)
 
 The database contains:
 
